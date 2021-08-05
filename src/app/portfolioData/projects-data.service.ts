@@ -165,50 +165,31 @@ export class ProjectsDataService {
       screenshots: ["/assets/project-screenshots/plaid-1.png"],
       skillToFilterBy: "APIs"
     },
-    // {
-    //   index: 14,
-    //   name: "Travel Blog",
-    //   summary: `This is a travel blog website storing blog posts in a mongoDB database`,
-    //   desc: `I built this travel blog to learn more about back end developement. It allows post creation and viewing,
-    //   and stores posts inside a mongoDB atlas database. I then built an node JS express api, that interacts with the database.
-    //   With the angular front-end, this is my first full stack app.`,
-    //   skills: ["Angular", "Typescript", "Node JS / Express", "Mongo DB", "REST APIs"],
-    //   screenshots: ["/assets/project-screenshots/blog-1.png"],
-    //   skillToFilterBy: "Angular"
-    // },
-    // {
-    //   index: 13,
-    //   name: "Captive Portal",
-    //   summary: "The default captive portal for the attend2IT network at events",
-    //   link: "",
-    //   desc: `This is the captive portal for the default network and is the first page users of the wifi will see.
-    //   Created in pure javascript, HTML and CSS. It Uses media queries to ensure it is useable on both mobile and desktop.`,
-    //   skills: ["Javascript", "CSS", "HTML", "Photoshop"],
-    //   screenshots: ["/assets/project-screenshots/captiveportal-1.png"],
-    //   skillToFilterBy: "Angular"
-    // },
-    // {
-    //   index: 12,
-    //   name: "Silent Auction",
-    //   summary: "A wordpress to advertise the silent auction software I created",
-    //   link: "https://silentauctiontexting.com/",
-    //   desc: `Making use of plugins, custom CSS and Javascript, this website acts as an advert for the auction software.
-    //   As an advert I made extra effort to ensure it was properly search engine optimised.`,
-    //   skills: ["Wordpress", "HTML", "CSS", "Photoshop", "SEO"],
-    //   screenshots: ["/assets/project-screenshots/silentauction-wordpress-1.png"],
-    //   skillToFilterBy: "Wordpress"
-    // },
-    // {
-    //   index: 10,
-    //   name: "Giphy Clone",
-    //   summary: "A clone of the popular giphy website for searching a large database of gifs for any occasion",
-    //   link: "",
-    //   githubLink: "https://github.com/BrooklynP/giphee",
-    //   desc: `The goal of this app was to get a better understanding of how REST APIs work and how to use a http client.`,
-    //   skills: ["Angular", "REST APIs"],
-    //   screenshots: ["/assets/project-screenshots/giphy-1.png"],
-    //   skillToFilterBy: "Angular"
-    // },
+    {
+      index: 14,
+      name: "Training Video App",
+      summary: "A webapp for viewing training videos",
+      desc: `Providing ongoing software support for a training video app, adding new features.<br><br> 
+      Including making changes to the React frontend, Working with MSSQL database including writing  procedures. Working with the loopback API <br><br>
+      Added Microsoft SSO functionality to the API authentication using PassportJS`,
+      skills: ["React", "Loopback", "SQL", "PassportJS", "Azure Active Directory"],
+      screenshots: ["/assets/project-screenshots/training1.png", "/assets/project-screenshots/training2.png"],
+      skillToFilterBy: "Full Stack"
+    },
+    {
+      index: 15,
+      name: "Alien Worlds Timer",
+      summary: "A utility extension for the dApp game Alien Worlds",
+      githubLink: 'https://github.com/BrooklynP/aw-timer',
+      link: 'https://chrome.google.com/webstore/detail/alien-worlds-timer/cfhokaomhckmlophlpmjgkndlbajconn',
+      desc: `This is a chrome extension that lets players know when their mining is ready to collect.<br><br>
+      It calls to an API that returns data about the WAX blockchain, Which it uses to work out when the player last mined, and when they can next.<br>
+      It also web scrapes data from a stats page to quickly display important info for the user.<br><br>
+      It is used by 2000+ users with an average of 4.3* rating on the Chrome Web Store.`,
+      skills: ["Chrome", "Javascript", "APIs"],
+      screenshots: ["/assets/project-screenshots/aw-timer8.png"],
+      skillToFilterBy: "Chrome Extensions"
+    }
   ];
 
   constructor() { }
