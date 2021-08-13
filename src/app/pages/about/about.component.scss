@@ -1,7 +1,7 @@
 @import '../../../global.scss';
 
 .downloadCV{
-	border: solid 2px $textPrimary;
+	border: solid 2px $accent;
   color: $textPrimary;
 	padding: 8px;
 	text-decoration: none;
@@ -21,7 +21,7 @@
 
 .downloadCV:hover{
 	background-color: $textPrimary;
-	color: $accent;
+	color: $backgroundColour;
 }
 
 .row{
@@ -41,7 +41,7 @@ img{
 	margin-left: 8px;
 	height: 200px;
 	width: auto;
-	border: solid 2px $textPrimary;
+	border: solid 2px $accent;
 	border-radius: 3px;
 }
 
