@@ -14,6 +14,7 @@ export class WorkTileComponent implements OnInit {
   @Input() techStack: any;
   @Input() setID: string;
   @Input() logoPath: string;
+  @Input() newPosition: boolean;
 
 
   public endDateProvided = true;

@@ -1,5 +1,5 @@
 <header>
-    <img [src]="logoPath">
+    <img [src]="logoPath" *ngIf="logoPath">
 </header>
 <section>
     <div class="row">
@@ -9,7 +9,8 @@
         <div [id]="setID">
             <p>
                 <span class="export">export </span><span class="modifier">class </span> <span
-                    class="className">{{company}}</span>{{' {'}}
+                    class="className">{{company}}</span><span class="modifier" *ngIf="newPosition"> extends</span><span
+              class="className" *ngIf="newPosition"> OldPosition</span>{{' {'}}
             </p>
             <p class="indent1">
                 <span class="modifier">public </span> <span class="memberName">title
@@ -21,16 +22,16 @@
                     {{endDateProvided ? (endDate  | customDate) : 'Current'}}'</span>; <span
                     class="comment">//{{getLengthOfTime()}} Months</span>
             </p>
-            <br>
-            <p class="indent1">
+            <br *ngIf="duties">
+            <p class="indent1" *ngIf="duties">
                 <span class="modifier">public </span> <span class="memberName">duties </span> = [<br>
                 <span *ngFor="let duty of duties;">
                     <span class="string indent2">'{{duty}}'<span class="comma">,</span></span><br>
                 </span>
                 <span>];</span>
             </p>
-            <br>
-            <p class="indent1">
+            <br *ngIf="techStack">
+            <p class="indent1" *ngIf="techStack">
                 <span class="modifier">public </span> <span class="memberName">techStack </span> = {{'{'}}<br>
                 <span class="memberName indent2">frontend:</span><span class="string">
                     '{{techStack.Frontend}}'</span>,<br>
