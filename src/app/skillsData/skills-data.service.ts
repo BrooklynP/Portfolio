@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SkillsDataService {
-  private readonly skills: Array<string> = ['Angular', 'Full Stack', 'Chrome Extensions','Electron', 'WPF', 'C++', 'Unity', 'Shopify', 'APIs'];
+  private readonly skills: Array<string> =
+    ['Angular', 'Full Stack', 'Chrome Extensions', 'Electron', 'WPF', 'C++', 'Unity', 'Shopify', 'APIs'];
 
   public getFilterableSkills(): Array<string> {
     return this.skills;

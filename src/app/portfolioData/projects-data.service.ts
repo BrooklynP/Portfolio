@@ -54,7 +54,7 @@ export class ProjectsDataService {
       githubLink: "https://github.com/BrooklynP/Unity-Rogue/",
       desc: `This is a 3D rogue-like game.
       You start in a randomly generated map and must move from room to room to eliminate enemies and collect gold.
-      The enemies have AI to pathfind and to decide wether to fight or run away based on their vision, health etc.
+      The enemies have AI to path-find and to decide whether to fight or run away based on their vision, health etc.
       Once a level is cleared you move onto a new one, until you die!`,
       skills: ["Unity", "C#"],
       screenshots: ["/assets/project-screenshots/rogue-1.png"],
@@ -78,7 +78,7 @@ export class ProjectsDataService {
       link: "",
       desc: `This is an openGL based top down shooter,
       that makes use of matrices and vector maths to work out AI pathfinding and bullet physics.
-      It uses randomly placed powerups and enemies as well as collision physics.
+      It uses randomly placed power-ups and enemies as well as collision physics.
       The main menu uses custom made buttons that work with the mouse for ease of navigation`,
       skills: ["C++", "OpenGL"],
       screenshots: ["/assets/project-screenshots/zombies-1.png"],
@@ -88,7 +88,7 @@ export class ProjectsDataService {
       index: 7,
       name: "HyperView",
       summary: `A stream monitoring app built with Electron and Angular`,
-      desc: `This is a desktop app designed to allow people to monitor mutliple streams recorders at once.
+      desc: `This is a desktop app designed to allow people to monitor multiple streams recorders at once.
       It provides support for watching various stream formats, as well as allowing control of recorders such as the
       Hyperdeck Studio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.`,
       skills: ["Electron", "Angular", "REST APIS", "Video JS"],
@@ -124,8 +124,9 @@ export class ProjectsDataService {
       name: "Portal",
       summary: "A dashboard providing staff with all the links they use on a day-to-day basis.",
       desc: `
-      This is the homepage for the office computer browsers at attend2IT. It is highly customisable, allowing links to be attached to 
-      groups of users aswell as allowing each individual user to add their own links to their account, With admins having oversight of the entire system.`,
+      This is the homepage for the office computer browsers at attend2IT. It is highly customisable, allowing links to be attached to
+      groups of users as well as allowing each individual user to add their own links to their account, With admins having oversight
+      of the entire system.`,
       skills: ["Angular", "Typescript", "AWS s3 & Cloudfront", "Bootstrap", "REST APIs", "Keycloak JWT Authentication"],
       screenshots: ["/assets/project-screenshots/clientportal-1.png"],
       skillToFilterBy: "Angular"
@@ -134,8 +135,9 @@ export class ProjectsDataService {
       index: 11,
       name: "Santa's Grotto",
       summary: "A Ticketing store front for Santa's Grotto",
-      desc: `This is a ecommerce store for a local garden centre that was hosting a Santa's Grotto. It ensured that Santa was never over capacity,
-      and limited tickets to ensure Covid-19 guidlines could be adhered to.`,
+      desc: `This is a ecommerce store for a local garden centre that was hosting a Santa's Grotto. It ensured that Santa was never over
+      capacity,
+      and limited tickets to ensure Covid-19 guidelines could be adhered to.`,
       skills: ["Shopify", "Ticketing", "Liquid"],
       screenshots: ["/assets/project-screenshots/santa1.png",
       "/assets/project-screenshots/santa2.png",
@@ -147,10 +149,12 @@ export class ProjectsDataService {
     {
       index: 12,
       name: "Loopback API",
-      summary: "A loopback 4 server paired with a powershell script to move data from a mySQL database to an SQL database",
-      desc: `This project started with migrating a complex Loopback 3 API to a Loopback 4 API, Including moving over authentication and custom remote methods.<br><br>
+      summary: "A Loopback 4 server paired with a powershell script to move data from a mySQL database to an SQL database",
+      desc: `This project started with migrating a complex Loopback 3 API to a Loopback 4 API, Including moving over authentication and
+      custom remote methods.<br><br>
       Then it had to be hosted on IIS using IISNode and opened up to the web so that it could be seen.<br><br>
-      And then I had to adapt a Powershell script so that it could talk to the API, Encode the data recieved into the correct encoding, and then push that data to a local database.`,
+      And then I had to adapt a Powershell script so that it could talk to the API, Encode the data received into the correct encoding,
+      and then push that data to a local database.`,
       skills: ["Loopback 3", "Loopback 4", "SQL", "Powershell", "IIS", "IISNode"],
       screenshots: ["/assets/project-screenshots/loopback1.png"],
       skillToFilterBy: "APIs"
@@ -159,8 +163,10 @@ export class ProjectsDataService {
       index: 13,
       name: "Plaid",
       summary: "A Node App using Plaid Open Banking API to pull bank transactions, and push them to a local database",
-      desc: `This is a Node application that is started and killed once every hour. It's job is to pull all transactions for the day, work out if any of them are new and if they are push them to a local database.
-      In the local database they are then matched to invoices. <br><br> I also built a Loopback 4 API to pair with it, to recieve the data and push to the SQL database.`,
+      desc: `This is a Node application that is started and killed once every hour. It's job is to pull all transactions for the day,
+work out if any of them are new and if they are push them to a local database.
+      In the local database they are then matched to invoices. <br><br>
+      I also built a Loopback 4 API to pair with it, to receive the data and push to the SQL database.`,
       skills: ["Open Banking", "APIs", "Plaid API", "SQL", "Loopback 4", "NodeJS"],
       screenshots: ["/assets/project-screenshots/plaid-1.png"],
       skillToFilterBy: "APIs"
@@ -169,8 +175,9 @@ export class ProjectsDataService {
       index: 14,
       name: "Training Video App",
       summary: "A webapp for viewing training videos",
-      desc: `Providing ongoing software support for a training video app, adding new features.<br><br> 
-      Including making changes to the React frontend, Working with MSSQL database including writing  procedures. Working with the loopback API <br><br>
+      desc: `Providing ongoing software support for a training video app, adding new features.<br><br>
+      Including making changes to the React frontend, Working with MSSQL database including writing  procedures.
+      Working with the loopback API <br><br>
       Added Microsoft SSO functionality to the API authentication using PassportJS`,
       skills: ["React", "Loopback", "SQL", "PassportJS", "Azure Active Directory"],
       screenshots: ["/assets/project-screenshots/training1.png", "/assets/project-screenshots/training2.png"],
@@ -183,7 +190,8 @@ export class ProjectsDataService {
       githubLink: 'https://github.com/BrooklynP/aw-timer',
       link: 'https://chrome.google.com/webstore/detail/alien-worlds-timer/cfhokaomhckmlophlpmjgkndlbajconn',
       desc: `This is a chrome extension that lets players know when their mining is ready to collect.<br><br>
-      It calls to an API that returns data about the WAX blockchain, Which it uses to work out when the player last mined, and when they can next.<br>
+      It calls to an API that returns data about the WAX blockchain,
+      Which it uses to work out when the player last mined, and when they can next.<br>
       It also web scrapes data from a stats page to quickly display important info for the user.<br><br>
       It is used by 2000+ users with an average of 4.3* rating on the Chrome Web Store.`,
       skills: ["Chrome", "Javascript", "APIs"],
