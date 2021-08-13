@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   private showSideMenu = false;
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
@@ -20,5 +21,20 @@ export class HeaderComponent implements OnInit {
 
   shouldShowSideMenu(): boolean {
     return this.showSideMenu;
+  }
+
+  public getActivePage(page: string): string {
+    return window.location.pathname.includes(page) ? 'active' : '';
+  }
+
+  public navigate(route: string) {
+    if (route.includes('mailto')) {
+      window.open(route);
+    } else if (route === "") {
+      window.location.pathname = "";
+    }  else {
+      this.router.navigate([route]);
+
+    }
   }
 }

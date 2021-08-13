@@ -1,3 +1,6 @@
+@import '../../../global.scss';
+
+
 section.landing{
     height: 100vh;
     width: 100vw;
@@ -10,32 +13,31 @@ section.landing{
         width: 90vw;
         max-width: 1000px;
     }
-    
+
     button{
-        // width: 100%;
         padding: 0;
         background: none;
-        color:#4AF626;
+        color: $textPrimary;
         border: none;
         text-align: left;
         font-size: 1.5em;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup';
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup', monospace;
         font-weight: 700;
-    
+
         -webkit-transition-duration: 0.3s; /* Safari */
         transition-duration: 0.3s;
-    
+
         cursor: pointer;
     }
-    
+
     span{
-        color: white;
+        color: $textSecondary;
     }
-            
+
     button:hover{
-        background-color: #0B0B0D;
+        background-color: #084d81;
     }
-    
+
     h1,h2,button{
         padding: 8px;
     }

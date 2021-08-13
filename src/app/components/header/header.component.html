@@ -1,18 +1,18 @@
 <header>
-    <button (click)="toggleSideMenu()"  *ngIf="!shouldShowSideMenu()">
+    <button (click)="toggleSideMenu()"  *ngIf="!shouldShowSideMenu()" class="hamburgerBtn">
         <i class="fa fa-bars"></i>
     </button>
     <nav>
-        <a href="/">Home</a>
-        <a href="/projects">Projects</a>
-        <a href="/about">About Me</a>
-        <a href="mailto:brooklynpedley@gmail.com" target="_blank">Contact</a>
+        <button (click)="navigate('')" >Home</button>
+        <button (click)="navigate('projects')"  [class]="getActivePage('projects')">Projects</button>
+        <button (click)="navigate('about')" [class]="getActivePage('about')">About Me</button>
+        <button (click)="navigate('mailto:brooklynpedley@gmail.com')">Contact</button>
     </nav>
     <h1>Brooklyn Pedley</h1>
 </header>
 
 <div *ngIf="shouldShowSideMenu()" class="sideMenu">
-    <button (click)="toggleSideMenu()">
+    <button (click)="toggleSideMenu()" class="hamburgerBtn">
         <i class="fa fa-times"></i>
     </button>
     <nav>

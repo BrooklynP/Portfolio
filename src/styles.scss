@@ -1,17 +1,19 @@
+@import 'global.scss';
+
 @font-face {
     font-family: 'Backup'; // Lucida Console stored in assets
     src: url(./assets/backup.ttf);
-  }
+}
 
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: #121212;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup';
-    margin: 0px;
+    background-color: $backgroundColour;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup', monospace;
+    margin: 0;
     overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6,a{
-    color:#4AF626;
+    color: $textPrimary;
 }
 
 a{
@@ -19,22 +21,24 @@ a{
 }
 
 p, i, li{
-    color: white;
+    color: $textSecondary;
 }
 
 i:hover{
-    color: #4AF626;
+    color: $textPrimary;
 }
 a:hover {
-    color:white;
+    color:$textSecondary;
 }
 
 .hr{
     width: 95%;
-    border-top: solid 1px black;
+    border-top: solid 1px $accent;
     height: 1px;
     margin: 8px auto;
 }
 button{
     cursor: pointer;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup', monospace;
+
 }
