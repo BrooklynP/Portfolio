@@ -157,7 +157,7 @@ export class ProjectsDataService {
       and then push that data to a local database.`,
       skills: ["Loopback 3", "Loopback 4", "SQL", "Powershell", "IIS", "IISNode"],
       screenshots: ["/assets/project-screenshots/loopback1.png"],
-      skillToFilterBy: "APIs"
+      skillToFilterBy: "Backend"
     },
     {
       index: 13,
@@ -169,7 +169,7 @@ work out if any of them are new and if they are push them to a local database.
       I also built a Loopback 4 API to pair with it, to receive the data and push to the SQL database.`,
       skills: ["Open Banking", "APIs", "Plaid API", "SQL", "Loopback 4", "NodeJS"],
       screenshots: ["/assets/project-screenshots/plaid-1.png"],
-      skillToFilterBy: "APIs"
+      skillToFilterBy: "Third Party APIs"
     },
     {
       index: 14,
@@ -179,7 +179,7 @@ work out if any of them are new and if they are push them to a local database.
       Including making changes to the React frontend, Working with MSSQL database including writing  procedures.
       Working with the loopback API <br><br>
       Added Microsoft SSO functionality to the API authentication using PassportJS`,
-      skills: ["React", "Loopback", "SQL", "PassportJS", "Azure Active Directory"],
+      skills: ["React", "Loopback", "SQL", "PassportJS", "Azure Active Directory", "ASP.VB"],
       screenshots: ["/assets/project-screenshots/training1.png", "/assets/project-screenshots/training2.png"],
       skillToFilterBy: "Full Stack"
     },
@@ -197,6 +197,28 @@ work out if any of them are new and if they are push them to a local database.
       skills: ["Chrome", "Javascript", "APIs"],
       screenshots: ["/assets/project-screenshots/aw-timer8.png"],
       skillToFilterBy: "Chrome Extensions"
+    },
+    {
+      index: 16,
+      name: "FTP Transfer Script",
+      summary: "A PowerShell script for converting SQL data to .xslx and sending it to a FTP server",
+      desc: `This is a powershell script for pulling report data from a local SQL database, and converting to Excel format.<br>
+            It then connects to a FTP server over the internet and sends the file using FTPS protocol`,
+      skills: ["PowerShell", "Running an FTP Server", "SQL"],
+      screenshots: ["/assets/project-screenshots/FTP1.png"],
+      skillToFilterBy: "Backend"
+    },
+    {
+      index: 17,
+      name: "iCal Generator",
+      summary: "An API endpoint for converting SQL data into a iCal file to be subscribed to",
+      desc: `This is an API endpoint that takes data from a local SQL database and creates an iCal file. <br><br>
+      It can then be downloaded by visiting the endpoint in browser. <br>
+      Or it can be subscribed to over the web as an iCal feed. <br><br>
+      It conforms to Microsoft spec for iCal`,
+      skills: ["ASP.VB", "iCal Format", "SQL"],
+      screenshots: ["/assets/project-screenshots/ical1.png"],
+      skillToFilterBy: "Backend"
     }
   ];
 

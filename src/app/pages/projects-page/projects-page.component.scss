@@ -71,21 +71,21 @@
 
 .filter-by-skills button{
     background-color: #25252B;
-    color: white;
+    color: $textPrimary;
     border: none;
-
+  padding: 2px  8px;
     margin: 8px 16px;
 
     cursor: pointer;
 }
 
 .filter-by-skills button:hover{
-    color: $textPrimary;
+    color: $textSecondary;
 }
 
 .filter-by-skills button:disabled{
-    color: black;
-    background-color: #697098;
+    color: $textSecondary;
+    background-color: $accent;
     cursor: default;
 }
 
