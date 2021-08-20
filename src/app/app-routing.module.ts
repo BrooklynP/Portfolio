@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AboutComponent } from './pages/about/about.component';
 import { SingleProjectPageComponent } from './pages/single-project-page/single-project-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { CvPageComponent } from './pages/cv-page/cv-page.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactPageComponent
+  },
+  {
+    path: 'about/cv',
+    component: CvPageComponent
   },
   {
     path: '**',

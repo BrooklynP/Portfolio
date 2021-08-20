@@ -1,0 +1,42 @@
+@import '../../../global.scss';
+
+header{
+    width:  50%;
+    margin: auto;
+}
+
+footer{
+    margin: 32px auto;
+}
+
+.container{
+    width:  50%;
+    margin: 32px auto;
+    border: solid 1px $accent;
+    padding: 64px;
+}
+
+.center{
+    text-align: center;
+}
+
+.downloadCV, button{
+    background: none;
+	border: solid 2px $accent;
+    color: $textPrimary;
+	padding: 8px;
+	text-decoration: none;
+	margin-right: 8px;
+	i{
+		margin-left: 4px;
+		color: inherit;
+	}
+	i.small{
+		margin-left: 0;
+	}
+}
+
+.downloadCV:hover, button:hover{
+	background-color: $textPrimary;
+	color: $backgroundColour;
+}

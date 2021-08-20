@@ -1,0 +1,217 @@
+<app-header></app-header>
+<header>
+    <h1 class="center">CV</h1>
+    <div class="center">
+        <a class="downloadCV" href="/assets/brooklyn-pedley-cv-stylised.docx" download title="Download My CV">Download
+            Stylised
+            CV<i class="fas fa-download"></i></a>
+        <a class="downloadCV" href="/assets/brooklyn-pedley-cv.docx" download title="Download My CV">Download Standard
+            CV<i class="fas fa-download"></i></a>
+    </div>
+    <footer class="center">
+        <button *ngIf="SelectedPage===1" (click)="goToPage(2)">Next Page</button>
+        <button *ngIf="SelectedPage===2" (click)="goToPage(1)">Previous Page</button>
+    </footer>
+</header>
+
+<div class="container" *ngIf="SelectedPage===1">
+    <section class="center">
+        <h1>Brooklyn Pedley</h1>
+        <p>82 Beechfield, Hoddesdon, Hertfordshire, EN11 9QJ<br>
+            brooklynpedley@gmail.com T: 07860224836
+        </p>
+        <h2>www.brooklynpedley.co.uk</h2>
+        <p>I am a hard-working individual who has experience in several areas of software programming
+            including front-end
+            web-app development. Having studied at degree level and now working within a professional development team,
+            I am
+            passionate about pursuing a career in developing software applications.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Employment
+        </h2>
+        <section>
+            <h3>
+                Full Stack JavaScript Specialist at AlphaFirst June 2021-Current
+            </h3>
+            <h3>
+                Junior Developer at AlphaFirst September 2020-June 2021
+            </h3>
+            <p>
+                Creating bespoke applications for local businesses
+            </p>
+            <ul>
+                <li>
+                    Creating front-ends using React
+                </li>
+                <li>
+                    Creating back-ends using Express and Loopback
+                </li>
+                <li>
+                    Creating databases using T-SQL and writing procedures etc.
+                </li>
+                <li>
+                    Creating ASP.NET apps
+                </li>
+                <li>
+                    Writing utility scripts with PowerShell
+                </li>
+                <li>
+                    Managing relationships with clients
+                </li>
+                <li>
+                    Managing Microsoft Azure
+                </li>
+                <li>
+                    Managing web hosting using IIS and Certify The Web
+                </li>
+                <li>
+                    Creating WordPress and Shopify sites
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>
+                Trainee Front-end Developer at attend2IT May 2019-September 2020.
+            </h3>
+            <p>
+                Creating bespoke applications for the events industry
+            </p>
+            <ul>
+                <li>
+                    Creating front-ends with Angular
+                </li>
+                <li>
+                    Creating Mobile apps using Ionic Cordova
+                </li>
+                <li>
+                    Creating Desktop apps using Electron
+                </li>
+                <li>
+                    Managing web hosting using AWS
+                </li>
+                <li>
+                    Creating WordPress websites
+                </li>
+                <li>
+                    Designing front-ends with Adobe XD
+                </li>
+                <li>
+                    Supporting clients on-site and on the phone
+                </li>
+                <li>
+                    Working as a networking technician when needed
+                </li>
+            </ul>
+        </section>
+    </section>
+</div>
+<div class="container" *ngIf="SelectedPage===2">
+    <section>
+        <h2>
+            Education
+        </h2>
+        <section>
+            <h3>
+                Certification in foundation user experience, Feb 2020
+            </h3>
+            <p>
+                Accredited BSC certification in UI and UX following a training course
+            </p>
+        </section>
+        <section>
+            <h3>
+                BSc Computer Games Programming, University of Gloucestershire, Cheltenham, Sept 2017-April 2019
+            </h3>
+            <p>
+                I completed 1 year of this course with an average of 70% on my assignments. This degree has modules
+                which
+                teaches
+                in-depth use of game engines such as Unity and Unreal 4 with C# as-well as producing games using C++ and
+                OpenGl,
+                and
+                desktop applications such as image loaders and editors using .NET. The Course promotes industry
+                standards like
+                use
+                of perforce version control as well as a heavy emphasis on team-based projects such as a 3D racer that
+                was
+                created
+                in Unity alongside designers.
+            </p>
+        </section>
+        <section>
+            <h3>
+                The John Warner School, Hertfordshire, Sept 2010-2016
+            </h3>
+            <p>
+                A Levels: Computing(C), Maths(C), Financial Studies(C), Physics(E)<br>
+                12 GCSEs A*-C including Maths(A*), Computing(A), Physics(A)
+            </p>
+        </section>
+    </section>
+    <section>
+        <h2>
+            Awards
+        </h2>
+        <section>
+            <h3>
+                Gold award in robotics at the NEC world skills show – November 2016
+            </h3>
+            <p>
+                Sole programmer as part of a team chosen by my school to undertake a 48hr competition in which I had to
+                create
+                an
+                autonomous robot capable of detecting RFID tags on objects scattered around a ring and then moving them
+                to
+                their
+                correct pit. I quickly learnt the programming language C and proved I could build a working program in
+                stressful
+                conditions. I take great pride in winning the gold medal in this competition and beating university
+                teams as
+                a
+                sixth form student.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Bronze Senior Mathematical Challenge – UK mathematics trust – November 2016
+            </h3>
+        </section>
+    </section>
+    <section>
+        <h2>
+            Addtional Experiences
+        </h2>
+        <section>
+            <p>
+                A level Computing Coursework, 2017 – Developed a room booking system for a new school that used python
+                3, an
+                SQLite database and a UI developed using Tkinter. The app allowed teachers and students to see what
+                rooms were
+                being used and book rooms accordingly over a server-client based database.
+            </p>
+        </section>
+        <section>
+            <p>
+                Work Shadowing at the Hertfordshire Police HQ, July 2015 – Spent 2 weeks with the IT team as well as the
+                in-house programming team. Repairing computer systems, handling the computer networks, and studying how
+                the
+                force develops its own software applications for use in the police environment.
+            </p>
+        </section>
+    </section>
+    <section>
+        <h2>
+            Other Work Experience
+        </h2>
+        <p>
+            Various experience during studies at Sainsbury’s 2016-2019, Steven Austin 2018 and Mcdonald’s 2015-2016
+        </p>
+    </section>
+</div>
+<footer class="center">
+    <button *ngIf="SelectedPage===1" (click)="goToPage(2)">Next Page</button>
+    <button *ngIf="SelectedPage===2" (click)="goToPage(1)">Previous Page</button>
+</footer>

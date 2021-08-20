@@ -17,6 +17,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { WorkTileComponent } from './components/work-tile/work-tile.component';
 import { CustomDatePipe } from './pipes/customDatePipe.datepipe';
 import { OtherExperienceTileComponent } from './components/other-experience-tile/other-experience-tile.component';
+import { CvPageComponent } from './pages/cv-page/cv-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { OtherExperienceTileComponent } from './components/other-experience-tile
     ContactPageComponent,
     WorkTileComponent,
     CustomDatePipe,
-    OtherExperienceTileComponent
+    OtherExperienceTileComponent,
+    CvPageComponent
   ],
   imports: [
     BrowserModule,
