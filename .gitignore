@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 src/app/secrets/secretDev.service.ts
 src/app/secrets/secret.service.ts
+src/assets/.~lock.brooklyn-pedley-cv-stylised.docx#
