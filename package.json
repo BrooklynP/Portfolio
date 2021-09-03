@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:prod": "ng build --prod",
-    "push:s3": "cd dist/portfolio && aws s3 cp . s3://www.brooklynpedley.co.uk --recursive"
+    "push:s3": "cd dist/portfolio && aws s3 cp . s3://www.brooklynpedley.co.uk --recursive",
+    "build:prod then push:s3": "ng build --prod && cd dist/portfolio && aws s3 cp . s3://www.brooklynpedley.co.uk --recursive"
   },
   "private": true,
   "dependencies": {
