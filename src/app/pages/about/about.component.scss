@@ -50,12 +50,8 @@ img{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-
-		border: solid 1px $accent;
-		box-shadow: 3px 3px 5px 0 $shadow;
-		border-radius: 4px;
-    	padding: 16px 8px 8px;
-    	margin: 16px 10px;
+    padding: 16px 8px 8px;
+    margin: 16px 10px;
 
 		div{
 			width: 240px;
@@ -76,9 +72,6 @@ img{
 }
 
 .educationTile{
-	border: solid 1px black;
-	box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.75);
-	border-radius: 4px;
 	padding: 16px;
 	margin: 16px 10px;
 

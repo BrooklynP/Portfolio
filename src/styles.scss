@@ -39,6 +39,11 @@ a:hover {
 }
 button{
     cursor: pointer;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup', monospace;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup', monospace;
+}
 
+.card{
+  border: solid 1px $accent;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 4px;
 }

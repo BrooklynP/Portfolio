@@ -1,7 +1,7 @@
 <header>
     <img [src]="logoPath" *ngIf="logoPath">
 </header>
-<section>
+<section class="card">
     <div class="row">
         <div class="numbers">
             <p *ngFor="let number of getArrayOfLines(); let i = index">{{i + 1}}</p>
