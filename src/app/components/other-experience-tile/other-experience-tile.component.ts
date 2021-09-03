@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OtherExperienceTileComponent implements OnInit {
   @Input() date: Date;
-  @Input() text: string;
+  @Input() text: string[];
   @Input() experienceTitle: string;
   @Input() setID: string;
 
