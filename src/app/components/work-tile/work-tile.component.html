@@ -25,8 +25,8 @@
             <br *ngIf="duties">
             <p class="indent1" *ngIf="duties">
                 <span class="modifier">public </span> <span class="memberName">duties </span> = [<br>
-                <span *ngFor="let duty of duties;">
-                    <span class="string indent2">'{{duty}}'<span class="comma">,</span></span><br>
+                <span *ngFor="let duty of duties; let i = index">
+                    <span class="string indent2">'{{duty}}'<span class="comma" *ngIf="i != duties.length - 1">,</span></span><br>
                 </span>
                 <span>];</span>
             </p>
@@ -40,7 +40,7 @@
                 <span class="memberName indent2">webHosting:</span><span class="string">
                     '{{techStack.Hosting}}'</span>,<br>
                 <span class="memberName indent2">database:</span><span class="string">
-                    '{{techStack.Database}}'</span>,<br>
+                    '{{techStack.Database}}'</span><br>
                 <span>{{'}'}};</span><br>
             </p>
             <p [id]="setID + 'p'">
