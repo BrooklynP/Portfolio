@@ -22,7 +22,7 @@
             <div class="project-card" *ngFor="let project of projects; let i = index"
                 [style.display]="showRightPanel && project.name === selectedProject.name ? 'none' : 'block'"
                 [style.backgroundImage]="'url('+project.screenshots[0]+')'" [style.width]="showRightPanel === false ? '300px' : '600px'" [style.height]="showRightPanel === false ? '150px' : '300px'">
-                <div (click)="selectProject(i)" class="project-card-title-container">
+                <div (click)="selectProject(i, project.index)" class="project-card-title-container">
                     <h1 class="project-card-title">
                         {{project.name}}
                     </h1>

@@ -60,7 +60,13 @@ export class ProjectsPageComponent implements OnInit {
     return skillName === this.currentFilter;
   }
 
-  selectProject(index: number) {
+  selectProject(index: number, trueIndex: number) {
+    console.log(screen.availHeight)
+    if(screen.availWidth <= 800){
+      this.router.navigate(['/projects', trueIndex]);
+      return
+    }
+
     clearTimeout(this.clearProjectTimeout);
     this.showRightPanel =  true
     this.selectedProject = this.projects[index];
