@@ -1,29 +1,41 @@
 <app-header></app-header>
 
-<div class="pageContainer">
+<article>
     <header>
         <h1>{{project.name}}</h1>
         <p>{{project.summary}}</p>
     </header>
 
-    <img src="{{project.screenshots[currentScreenshot]}}" alt="Screenshot of project">
-    <div class="imgControls" *ngIf="project.screenshots.length > 1">
-        <button (click)="previousScreenshot()"> < </button>
-        <div (click) ="selectScreenshot(i)" class="selector" *ngFor="let image of project.screenshots; let i = index" [style.backgroundColor]="i === currentScreenshot ? '#4AF626' : 'black'"></div>
-        <button (click)="nextScreenshot()"> > </button>
-    </div>
+    <figure>
+        <img src="{{project.screenshots[currentScreenshot]}}" alt="Screenshot of project">
+        <div class="imgControls" *ngIf="project.screenshots.length > 1">
+            <button (click)="previousScreenshot()"> < </button>
+            <div (click) ="selectScreenshot(i)" class="selector" *ngFor="let image of project.screenshots; let i = index" [style.backgroundColor]="i === currentScreenshot ? '#4AF626' : 'black'"></div>
+            <button (click)="nextScreenshot()"> > </button>
+        </div>
+    </figure>
 
-    <h2>About This Project</h2>
-    <p [innerHTML]="project.desc"></p>
+    <section>
+        <h2>About This Project</h2>
+        <p [innerText]="project.desc"></p>
+    </section>
 
-    <h2>Tech And Skills</h2>
-    <ul>
-        <li *ngFor="let skill of project.skills">{{skill}}</li>
-    </ul>
+    <section>
+        <h2>Tech And Skills</h2>
+        <ul class="includeBullets">
+            <li *ngFor="let skill of project.skills">{{skill}}</li>
+        </ul>
+    </section>
 
-    <h2 *ngIf="project.link || project.githubLink">Resources</h2>
-    <a *ngIf="project.link" href="{{project.link}}" title="This Project's Website">View Project Live
-        <i class="fas fa-link"></i></a><br>
-    <a *ngIf="project.githubLink" href="{{project.githubLink}}" title="This Project's GitHub">View Project Code
-        <i class="fab fa-github"></i></a>
-</div>
+    <section>
+        <h2 *ngIf="project.link || project.githubLink">Resources</h2>
+        <ul>
+            <li>
+                <a *ngIf="project.link" href="{{project.link}}" title="This Project's Website">View Project Live <i class="fas fa-link"></i></a>
+            </li>
+            <li>
+                <a *ngIf="project.githubLink" href="{{project.githubLink}}" title="This Project's GitHub">View Project Code<i class="fab fa-github"></i></a>
+            </li>
+        </ul>
+    </section>
+</article>
