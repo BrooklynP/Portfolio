@@ -1,5 +1,9 @@
 @import '../../../global.scss';
 
+figure{
+	margin:0;
+}
+
 .downloadCV{
 	border: solid 2px $accent;
   	color: $textPrimary;
@@ -138,7 +142,7 @@ section{
 	}
 }
 
-nav{
+nav.pageNav{
 	display: flex;
 	justify-content: center;
 	a{

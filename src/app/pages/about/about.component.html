@@ -1,5 +1,5 @@
 <app-header></app-header>
-<nav>
+<nav class="pageNav">
     <p>
         <a href="/about#tech-stack">Tech Stack</a><span>/</span>
         <a href="/about#work-experience">Work Experience</a><span>/</span>
@@ -8,24 +8,24 @@
     </p>
 </nav>
 <div class="hr"></div>
-<div class="row">
+<section class="row">
     <div class="left">
         <h1>Full Stack Developer</h1>
-        <p>Hi! I am a Junior Developer based in Hertfordshire. <br><br> I have {{getExperience('May 1, 2019')}}
+        <p>Hi! I am a Mid-Level Developer based in Hertfordshire. <br><br> I have {{getExperience('May 1, 2019')}}
           years industry experience producing software, with a focus on Javascript web applications.</p>
-        <div class="links">
+        <nav class="links">
             <a class="downloadCV" href="/about/cv" title="View My CV" target="_self">View CV<i
                     class="far fa-file"></i></a>
             <a class="downloadCV" href="https://www.github.com/brooklynP" target="_blank" title="Go To My Github">See My
                 Code<i class="fab fa-github"></i></a>
             <a class="downloadCV" href="https://www.linkedin.com/in/brooklynpedley/" target="_blank"
                title="See My Linkedin"><i class="fab fa-linkedin small"></i></a>
-        </div>
+        </nav>
     </div>
-    <div class="right">
+    <figure class="right">
         <img src="../../../assets/portrait.jpg" alt="Profile Picture">
-    </div>
-</div>
+    </figure>
+</section>
 <div class="hr"></div>
 <section class="techStack " id="tech-stack">
     <h3>&lt; My Tech Stack &gt;</h3>
@@ -63,10 +63,10 @@
             </p>
         </div>
         <footer>
-            <img src="../../../assets/logos/angular.png" alt="Angular Logo"><img src="../../../assets/logos/react.png"
-                                                                                 alt="React Logo">
-            <img src="../../../assets/logos/node.png" alt="Node Logo"><img src="../../../assets/logos/loopback.png"
-                                                                           alt="Loopback Logo">
+            <img src="../../../assets/logos/angular.png" alt="Angular Logo">
+            <img src="../../../assets/logos/react.png" alt="React Logo">
+            <img src="../../../assets/logos/node.png" alt="Node Logo">
+            <img src="../../../assets/logos/loopback.png" alt="Loopback Logo">
             <img src="../../../assets/logos/sql.png" alt="SQL Logo">
         </footer>
     </div>
