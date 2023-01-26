@@ -1,5 +1,82 @@
 @import '../../../global.scss';
 
+.pageContainer{
+    display:flex;
+}
+
+.right{
+    position:fixed;
+    width: 50%;
+    transition: left 1s;
+}
+
+.left{
+    transition: width 1s;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul.includeBullets li:before{
+    content: "> ";
+}
+
+.selectedProjectImage{
+    height: 300px;
+    width: auto;
+
+}
+.imgControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        border: none;
+        background: none;
+        color: #4AF626;
+        font-size: 24pt;
+        cursor: pointer;
+    }
+}
+.card{
+    border: solid 1px $accent;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 0 8%;
+    margin: auto 5%;
+    margin-top: 1em;
+  }
+.selector{
+    width: 16px;
+    height: 16px;
+    border-radius:16px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.deselectButton{
+    position:absolute;
+    top: 35px;
+    right:75px;
+
+    background-color: #25252B;
+    color: $textPrimary;
+    border: none;
+}
+
+
+.deselectButton:hover{
+    color: $textSecondary;
+}
 
 .project-cards-container{
     display: flex;
@@ -8,25 +85,38 @@
     align-content: flex-start;
     flex-wrap: wrap;
 
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
 }
 
 .project-card{
-    width: 300px;
-    height: 150px;
+    // width: 300px;
+    // flex-basis: 20%;
+    // height: 150px;
 
     cursor: pointer;
 
     padding: 0;
     margin: 32px;
+    // gap: 32px;
 
     background-color: #01111d;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
-    transition: 0.2s;
+    transition: width 1s;
+    transition:  height 1s;
+}
+
+.project-card.selected{
+    border: solid 2px $textPrimary;
+}
+.project-card.selected .project-card-title-container{
+    background-color: rgba(0,0,0,0.8);
+}
+.project-card.selected .project-card-title{
+    visibility: visible;
 }
 
 .project-card button{
@@ -89,7 +179,7 @@
     cursor: default;
 }
 
-h1, p{
+h1, .center{
     text-align: center;
 }
 

@@ -13,13 +13,47 @@ export class ProjectsPageComponent implements OnInit {
   public projects: Array<any>;
   public skillsToFilterBy: Array<string>;
   public currentFilter = 'all';
+  private clearProjectTimeout: NodeJS.Timer;
+
+  public showRightPanel = false;
+  public selectedProject =    {
+    index: -1,
+    name: "",
+    summary: "",
+    skills: [],
+    screenshots: [],
+    skillToFilterBy: ""
+  };
+  public currentScreenshot = 0
 
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
+    console.log(this.projects)
     this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
   }
 
   ngOnInit() {
+  }
+
+
+  nextScreenshot() {
+    if (this.currentScreenshot === this.selectedProject.screenshots.length - 1) {
+      this.currentScreenshot = 0;
+    } else {
+      this.currentScreenshot++;
+    }
+  }
+
+  previousScreenshot() {
+    if (this.currentScreenshot === 0) {
+      this.currentScreenshot = this.selectedProject.screenshots.length - 1;
+    } else {
+      this.currentScreenshot--;
+    }
+  }
+
+  selectScreenshot(index: number) {
+    this.currentScreenshot = index;
   }
 
   getSelectedClass(skillName: string): boolean {
@@ -27,7 +61,10 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   selectProject(index: number) {
-    this.router.navigate(['/projects', index]);
+    clearTimeout(this.clearProjectTimeout);
+    this.showRightPanel =  true
+    this.selectedProject = this.projects[index];
+    scrollTo({top: 0, behavior: 'smooth'})
   }
 
   selectFilter(filterBy: string) {
@@ -40,5 +77,20 @@ export class ProjectsPageComponent implements OnInit {
     this.projects = this.projectsService.getProjects().filter(project => {
       return project.skillToFilterBy === this.currentFilter;
     });
+  }
+
+  deselectProject(){
+    this.showRightPanel = false;
+    this.clearProjectTimeout = setTimeout(() => {
+      this.selectedProject = {
+        index: -1,
+        name: "",
+        summary: "",
+        skills: [],
+        screenshots: [],
+        skillToFilterBy: ""
+      };
+    }, 2000);
+
   }
 }
