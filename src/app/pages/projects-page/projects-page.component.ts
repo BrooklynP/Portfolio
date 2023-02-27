@@ -16,19 +16,21 @@ export class ProjectsPageComponent implements OnInit {
   private clearProjectTimeout: NodeJS.Timer;
 
   public showRightPanel = false;
-  public selectedProject =    {
+  public selectedProject = {
     index: -1,
     name: "",
     summary: "",
     skills: [],
     screenshots: [],
-    skillToFilterBy: ""
+    skillToFilterBy: "",
+    githubLink: null,
+    link: null,
+    desc: null
   };
   public currentScreenshot = 0
 
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
-    console.log(this.projects)
     this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
   }
 
@@ -61,7 +63,6 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   selectProject(index: number, trueIndex: number) {
-    console.log(screen.availHeight)
     if(screen.availWidth <= 800){
       this.router.navigate(['/projects', trueIndex]);
       return
@@ -94,7 +95,10 @@ export class ProjectsPageComponent implements OnInit {
         summary: "",
         skills: [],
         screenshots: [],
-        skillToFilterBy: ""
+        skillToFilterBy: "",
+        githubLink: null,
+        link: null,
+        desc: null
       };
     }, 2000);
 
