@@ -11,8 +11,8 @@ export class ProjectsDataService {
       name: "Space Invaders",
       summary: "A faithful reproduction of the classic space invaders",
       link: "",
-      githubLink: "https://github.com/BrooklynP/space-invaders/",
-      desc: `a OpenGL based reproduction of space invaders. Including fully destructible shields, Stored high scores and more`,
+      githubLink: "https://github.com/BrooklynP/space-invaders/tree/master/Frameworkproject/ct4019/SpaceInvaders",
+      desc: `As part of a University module, I produced a OpenGL based reproduction of space invaders. Including fully destructible shields, stored high scores and more`,
       skills: ["C++", "OpenGL"],
       screenshots: ["/assets/project-screenshots/spaceinvaders-1.PNG",
       "/assets/project-screenshots/spaceinvaders-2.PNG",
@@ -22,16 +22,13 @@ export class ProjectsDataService {
     {
       index: 2,
       name: "This Portfolio",
-      summary: "A portfolio of some of the projects i'm most proud of",
-      link: "brooklynpedley.co.uk",
+      summary: "A portfolio of some of the projects I'm most proud of",
+      link: "https://brooklynpedley.co.uk",
       githubLink: "https://github.com/BrooklynP/portfolio/",
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
-      skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES", "AWS S3"],
-      screenshots: ["/assets/project-screenshots/portfolio-3.png",
-      "/assets/project-screenshots/portfolio-2.png",
-      "/assets/project-screenshots/portfolio-1.png",
-      "/assets/project-screenshots/portfolio-4.png", ],
+      skills: ["Angular", "AWS S3"],
+      screenshots: ["/assets/project-screenshots/portfolio-3.png"],
       skillToFilterBy: "Angular"
     },
     {
@@ -41,7 +38,7 @@ export class ProjectsDataService {
       link: "",
       githubLink: "https://github.com/BrooklynP/Super-Sumo/",
       desc: `This is a 2D party game where 4 people use Xbox controllers to move around an arena and push their opponents out of the ring,
-      to be the last sumo wrestler standing`,
+      to be the last sumo wrestler standing.`,
       skills: ["Unity", "C#"],
       screenshots: ["/assets/project-screenshots/supersumo-1.png"],
       skillToFilterBy: "Unity"
@@ -88,9 +85,10 @@ export class ProjectsDataService {
       index: 7,
       name: "HyperView",
       summary: `A stream monitoring app built with Electron and Angular`,
-      desc: `This is a desktop app designed to allow people to monitor multiple streams recorders at once.
-      It provides support for watching various stream formats, as well as allowing control of recorders such as the
-      Hyperdeck Studio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.`,
+      desc: `This is a desktop app designed to help people monitor multiple streams recorders at once.
+      It provides support for watching various stream formats, 
+      as well as the ability to control recorders such as the Hyperdeck Studio and Aja KI Pro through their respective APIs. 
+      It also analyses audio data to draw an audiometer on a canvas.`,
       skills: ["Electron", "Angular", "REST APIS", "Video JS"],
       screenshots: ["/assets/project-screenshots/hyperview-1.png"],
       skillToFilterBy: "Electron"
@@ -105,14 +103,14 @@ export class ProjectsDataService {
       so that they can organise them by area to better see the data they need.
       Due to the amount of data and requirement to constantly update and redraw the graphs,
       it was a priority to ensure performance efficient code was used.`,
-      skills: ["Angular", "Typescript", "HighChartsJS", "AWS s3", "REST APIs", "Keycloak JWT Authentication"],
+      skills: ["Angular", "Typescript", "HighChartsJS", "AWS S3", "REST APIs", "Keycloak JWT Authentication"],
       screenshots: ["/assets/project-screenshots/peoplecounter-1.jpg"],
       skillToFilterBy: "Angular"
     },
     {
       index: 9,
       name: "Silent Auction",
-      summary: "A Webapp for people hosting silent auctions, displaying current bids in a variety of fun combinations",
+      summary: "A web app for people hosting silent auctions, displaying current bids in a variety of fun combinations",
       desc: `I designed a frontend display for a silent auction system using a scrolling carousel design.
       This was developed using CSS animations`,
       skills: ["Angular", "Typescript", "CSS", "REST APIs", "Designed In Adobe XD"],
@@ -123,11 +121,10 @@ export class ProjectsDataService {
       index: 10,
       name: "Portal",
       summary: "A dashboard providing staff with all the links they use on a day-to-day basis.",
-      desc: `
-      This is the homepage for the office computer browsers at attend2IT. It is highly customisable, allowing links to be attached to
+      desc: `This is the homepage for the office computer browsers at attend2IT. It is highly customisable, allowing links to be attached to
       groups of users as well as allowing each individual user to add their own links to their account, With admins having oversight
       of the entire system.`,
-      skills: ["Angular", "Typescript", "AWS s3 & Cloudfront", "Bootstrap", "REST APIs", "Keycloak JWT Authentication"],
+      skills: ["Angular", "Typescript", "AWS S3 & Cloudfront", "Bootstrap", "REST APIs", "Keycloak JWT Authentication"],
       screenshots: ["/assets/project-screenshots/clientportal-1.png"],
       skillToFilterBy: "Angular"
     },
@@ -135,8 +132,8 @@ export class ProjectsDataService {
       index: 11,
       name: "Santa's Grotto",
       summary: "A Ticketing store front for Santa's Grotto",
-      desc: `This is a ecommerce store for a local garden centre that was hosting a Santa's Grotto. It ensured that Santa was never over
-      capacity,
+      desc: `This is an e-commerce store for a local garden centre that was hosting a Santa's Grotto. 
+      It ensured that Santa was never over capacity!
       and limited tickets to ensure Covid-19 guidelines could be adhered to.`,
       skills: ["Shopify", "Ticketing", "Liquid"],
       screenshots: ["/assets/project-screenshots/santa1.png",
@@ -149,13 +146,12 @@ export class ProjectsDataService {
     {
       index: 12,
       name: "Loopback API",
-      summary: "A Loopback 4 server paired with a powershell script to move data from a mySQL database to an SQL database",
-      desc: `This project started with migrating a complex Loopback 3 API to a Loopback 4 API, Including moving over authentication and
-      custom remote methods.<br><br>
-      Then it had to be hosted on IIS using IISNode and opened up to the web so that it could be seen.<br><br>
-      And then I had to adapt a Powershell script so that it could talk to the API, Encode the data received into the correct encoding,
+      summary: "A Loopback 4 server paired with a powershell script to move data from a MySQL database to an SQL database",
+      desc: `This project started with upgrading a complex Loopback 3 API to a Loopback 4 API, including moving over authentication and custom remote methods.
+      Then it had to be hosted on IIS using IISNode and opened up to the web so that it could be seen.
+      And then I had to adapt a PowerShell script so that it could talk to the new API, Encode the data received into the correct encoding,
       and then push that data to a local database.`,
-      skills: ["Loopback 3", "Loopback 4", "SQL", "Powershell", "IIS", "IISNode"],
+      skills: ["Loopback 3", "Loopback 4", "T-SQL", "PowerShell", "IIS", "IISNode"],
       screenshots: ["/assets/project-screenshots/loopback1.png"],
       skillToFilterBy: "Backend"
     },
@@ -163,10 +159,10 @@ export class ProjectsDataService {
       index: 13,
       name: "Plaid",
       summary: "A Node App using Plaid Open Banking API to pull bank transactions, and push them to a local database",
-      desc: `This is a Node application that is started and killed once every hour. It's job is to pull all transactions for the day,
-work out if any of them are new and if they are push them to a local database.
-      In the local database they are then matched to invoices. <br><br>
-      I also built a Loopback 4 API to pair with it, to receive the data and push to the SQL database.`,
+      desc: `This is a Node application that is run regularly every hour. 
+      Its job is to pull all transactions for the day, work out if any of them are new, and if they are push them to a local database.
+      In the local database they are then matched to invoices.
+      I also built a Loopback 4 API to receive the data and update the SQL database.`,
       skills: ["Open Banking", "APIs", "Plaid API", "SQL", "Loopback 4", "NodeJS"],
       screenshots: ["/assets/project-screenshots/plaid-1.png"],
       skillToFilterBy: "Third Party APIs"
@@ -175,10 +171,9 @@ work out if any of them are new and if they are push them to a local database.
       index: 14,
       name: "Training Video App",
       summary: "A webapp for viewing training videos",
-      desc: `Providing ongoing software support for a training video app, adding new features.<br><br>
-      Including making changes to the React frontend, Working with MSSQL database including writing  procedures.
-      Working with the loopback API <br><br>
-      Added Microsoft SSO functionality to the API authentication using PassportJS`,
+      desc: `Providing ongoing software support for a training video app and adding new features.
+      Changes include updates to the React frontend, as well as the T-SQL database and loopback API that support the backend.
+      I have Added Microsoft SSO functionality to the API's authentication using PassportJS as well as a new smart recommendation system using machine learning.`,
       skills: ["React", "Loopback", "SQL", "PassportJS", "Azure Active Directory", "ASP.VB"],
       screenshots: ["/assets/project-screenshots/training1.png", "/assets/project-screenshots/training2.png"],
       skillToFilterBy: "Full Stack"
@@ -189,10 +184,10 @@ work out if any of them are new and if they are push them to a local database.
       summary: "A utility extension for the dApp game Alien Worlds",
       githubLink: 'https://github.com/BrooklynP/aw-timer',
       link: 'https://chrome.google.com/webstore/detail/alien-worlds-timer/cfhokaomhckmlophlpmjgkndlbajconn',
-      desc: `This is a chrome extension that lets players know when their mining is ready to collect.<br><br>
+      desc: `This is a chrome extension that lets players know when their mining is ready to collect.
       It calls to an API that returns data about the WAX blockchain,
-      Which it uses to work out when the player last mined, and when they can next.<br>
-      It also web scrapes data from a stats page to quickly display important info for the user.<br><br>
+      Which it uses to work out when the player last mined, and when they can next.
+      It also web scrapes data from a stats page to quickly display important info for the user.
       It is used by 2000+ users with an average of 4.3* rating on the Chrome Web Store.`,
       skills: ["Chrome", "Javascript", "APIs"],
       screenshots: ["/assets/project-screenshots/aw-timer8.png"],
@@ -202,8 +197,8 @@ work out if any of them are new and if they are push them to a local database.
       index: 16,
       name: "FTP Transfer Script",
       summary: "A PowerShell script for converting SQL data to .xslx and sending it to a FTP server",
-      desc: `This is a powershell script for pulling report data from a local SQL database, and converting to Excel format.<br>
-            It then connects to a FTP server over the internet and sends the file using FTPS protocol`,
+      desc: `This is a PowerShell script for pulling report data from a local SQL database, and converting it to Excel format.
+            It then connects to a FTP server over the internet and sends the file using the FTPS protocol.`,
       skills: ["PowerShell", "Running an FTP Server", "SQL"],
       screenshots: ["/assets/project-screenshots/FTP1.png"],
       skillToFilterBy: "Backend"
@@ -212,10 +207,10 @@ work out if any of them are new and if they are push them to a local database.
       index: 17,
       name: "iCal Generator",
       summary: "An API endpoint for converting SQL data into a iCal file to be subscribed to",
-      desc: `This is an API endpoint that takes data from a local SQL database and creates an iCal file. <br><br>
-      It can then be downloaded by visiting the endpoint in browser. <br>
-      Or it can be subscribed to over the web as an iCal feed. <br><br>
-      It conforms to Microsoft spec for iCal`,
+      desc: `This is an API endpoint that takes data from a local SQL database and creates an iCal file. 
+      It can then be downloaded by visiting the endpoint in browser. 
+      Or it can be subscribed to over the web as an iCal feed. 
+      It conforms to Micrsooft spec for iCal`,
       skills: ["ASP.VB", "iCal Format", "SQL"],
       screenshots: ["/assets/project-screenshots/ical1.png"],
       skillToFilterBy: "Backend"
