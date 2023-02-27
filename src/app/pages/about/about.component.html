@@ -90,20 +90,21 @@
         <app-work-tile setID="workTileRight2" title="Junior Developer" company="AlphaFirst"
             [startDate]="createDate('September 1, 2020')" [endDate]="createDate('June 29, 2021')" [duties]="[
         'Producing bespoke software solutions',
-        'Creating backend APIS and databases',
+        'Creating APIs and databases',
         'Designing and creating responsive frontends',
+        'Scripting with PowerShell',
         'Supporting clients and managing projects', 'Producing Wordpress and Shopify sites']" [techStack]="{
         Frontend: 'React',
         Backend: 'Node.JS and Loopback',
         Hosting: 'Microsoft IIS',
-        Database: 'MSSQL'
+        Database: 'T-SQL'
       }"></app-work-tile>
 
         <app-work-tile setID="workTileRight3" title="Trainee Developer" company="Attend2IT"
             [startDate]="createDate('May 1, 2019')" [endDate]="createDate('September 1, 2020')" [duties]="[
         'Producing bespoke apps and websites for the events industry',
     'Designing and creating responsive frontends',
-    'Creating Wordpress websites with custom functionality',
+    'Creating WordPress websites with custom functionality',
     'Developing apps to work multiple on formats',
     'Supporting clients on-site and on the phone',
     'Working as a networking technician when needed']" [techStack]="{
@@ -117,14 +118,15 @@
     <div class="hr"></div>
     <section id="other-experience">
         <h3>&lt; Other Experience &gt;</h3>
-        <app-other-experience-tile setID="expTile1" [date]="createDate('February 1, 2020')"
+        <app-other-experience-tile setID="expTile1" [date]="createDate('January 3, 2022')"
+            experienceTitle="CertificateInBusinessAnalysisFundamentals" [text]="['I have completed a training course in ' +
+         'business analysis to make sure the software I develop is fit for the requirements of the client']"></app-other-experience-tile>
+        <app-other-experience-tile setID="expTile2" [date]="createDate('February 1, 2020')"
             experienceTitle="CertificationInUIUX" [text]="['I have attained a BSC accredited certification in foundation ' +
          'user experience following a training course on the subject']"></app-other-experience-tile>
-
-        <app-other-experience-tile setID="expTile2" [date]="createDate('November 1, 2016')"
+        <app-other-experience-tile setID="expTile3" [date]="createDate('November 1, 2016')"
             experienceTitle="GoldMedalAtWorldSkillsShow" [text]="['Paired with an engineer I went to the world skills show' +
-         'at the NEC, to represent my school in undertaking a 48hr competition with teams from other schools and ' +
-          'universities.',
+         ' at the NEC, to represent my school in undertaking a 48hr competition',
         'We had to create an autonomous robot capable of detecting RFID coloured tags on objects scattered around an ' +
          'arena and then move them to corresponding nets.',
         'I had to quickly learn how to use C while my engineer developed the robot. ' +
@@ -132,10 +134,10 @@
         'I take great pride in the fact I was able to win the gold medal in this competition!']">
         </app-other-experience-tile>
 
-        <app-other-experience-tile setID="expTile3" [date]="createDate('May 1, 2015')"
-            experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work ' +
-         'experience at the Hertfordshire Police HQ. Here I shadowed their IT team as well as the in house developers.'+
-        'I learnt a lot about repairing IT equipment as well as seeing hands on how software developers' +
+        <app-other-experience-tile setID="expTile4" [date]="createDate('May 1, 2015')"
+            experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks of work ' +
+         'experience at the Hertfordshire Police HQ. Here I shadowed their IT team as well as the in house developers. '+
+        'I learnt a lot about repairing IT equipment as well as seeing hands on how software developers ' +
         'worked in the industry.']"></app-other-experience-tile>
         <h3>&lt;/ Other Experience &gt;</h3>
 
@@ -207,9 +209,12 @@
                         </li>
                     </ul>
                 </div>
-                <p>
-                    UKMT Math's Challenge: Bronze
-                </p>
+                <div>
+                    <h5>Other Certs</h5>
+                    <p>
+                        UKMT Math's Challenge: Bronze
+                    </p>
+                </div>
             </div>
         </div>
         <h3>&lt;/ Education &gt;</h3>
