@@ -23,7 +23,6 @@ export class WorkTileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.logoPath);
     if (!this.endDate) {
       this.endDate = new Date();
       this.endDateProvided = false;
