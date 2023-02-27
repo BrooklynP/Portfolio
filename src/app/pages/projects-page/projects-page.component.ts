@@ -69,6 +69,7 @@ export class ProjectsPageComponent implements OnInit {
     }
 
     clearTimeout(this.clearProjectTimeout);
+    this.currentScreenshot = 0;
     this.showRightPanel =  true
     this.selectedProject = this.projects[index];
     scrollTo({top: 0, behavior: 'smooth'})
