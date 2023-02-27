@@ -1,89 +1,94 @@
 <app-header></app-header>
-<nav class="pageNav">
-    <p>
-        <a href="/about#tech-stack">Tech Stack</a><span>/</span>
-        <a href="/about#work-experience">Work Experience</a><span>/</span>
-        <a href="/about#other-experience">Other Experience</a><span>/</span>
-        <a href="/about#education">Education</a>
-    </p>
-</nav>
-<div class="hr"></div>
-<section class="row">
-    <div class="left">
-        <h1>Full Stack Developer</h1>
-        <p>Hi! I am a Mid-Level Developer based in Hertfordshire. <br><br> I have {{getExperience('May 1, 2019')}}
-          years industry experience producing software, with a focus on Javascript web applications.</p>
-        <nav class="links">
-            <a class="downloadCV" href="/about/cv" title="View My CV" target="_self">View CV<i
-                    class="far fa-file"></i></a>
-            <a class="downloadCV" href="https://www.github.com/brooklynP" target="_blank" title="Go To My Github">See My
-                Code<i class="fab fa-github"></i></a>
-            <a class="downloadCV" href="https://www.linkedin.com/in/brooklynpedley/" target="_blank"
-               title="See My Linkedin"><i class="fab fa-linkedin small"></i></a>
-        </nav>
-    </div>
-    <figure class="right">
-        <img src="../../../assets/portrait.jpg" alt="Profile Picture">
-    </figure>
-</section>
-<div class="hr"></div>
-<section class="techStack" id="tech-stack">
-    <h3>&lt; My Tech Stack &gt;</h3>
-    <div class="row">
-        <div class="card fullWidth left">
-            <h4>The Frontend</h4>
-            <p>I love to use React or Angular for my frontends with great experience in both. 
-                And have a lot of experience building server rendered front ends using Visual Basic .NET</p>
-            <p>I have implemented with many enterprise level third party APIs such as Microsoft Graph, Xero/Quickbooks, MalwareBytes and Keap.</p>
-        </div>
-        <div class="card fullWidth right">
-            <h4>The Backend</h4>
-            <p>I have experience building out large databases on Microsoft SQL Server, using T-SQL to create complex procedures and views.</p>
-            <p>When it comes to hosting I have a mix of experience between AWS, Azure and IIS.<br>
-                For AWS I am capable of using S3 and CloudFront to build scalable websites as well as API Gateway and Lambda to setup APIs</p>
-            <p>To Link it all together, I have developed APIs both directly in Express.JS and using Loopback to quickly scaffold APIs.</p>
-        </div>
-    </div>
-    <div class="body card">
-        <!-- <div>
-            <h4>Source Control</h4>
-            <p>I like to use GitHub for my personal projects, and BitBucket for my work projects. I've also had some
-                experience with perforce</p>
-        </div> -->
-        <div>
-            <h4>Web Services</h4>
-            <p>I have currently been using AWS for my web service needs. Using s3 and cloudfront to host my apps. And
-                API gateway and lambda to host some APIs</p>
-        </div>
-        <!-- <div>
-
-        </div> -->
-        <!-- <div>
-            <h4>Platforms</h4>
-            <p>I have worked with both Windows and Mac platforms to develop, And I am used to testing for a variety of
-                mobile and desktop environments
+<div class="container">
+    <nav class="pageNav">
+        <p>
+            <a href="/about#tech-stack">Tech Stack</a><span>/</span>
+            <a href="/about#work-experience">Work Experience</a><span>/</span>
+            <a href="/about#other-experience">Other Experience</a><span>/</span>
+            <a href="/about#education">Education</a>
+        </p>
+    </nav>
+    <div class="hr"></div>
+    <section class="row">
+        <div class="left">
+            <h1>Full Stack Developer</h1>
+            <p>Hi! I am a Web Developer based in Hertfordshire. <br><br> I have {{getExperience('May 1, 2019')}}
+                years of industry experience producing software across a broad range of requirements, with a focus on
+                JavaScript web applications.</p>
+            <p>
+                My skills take me across the whole developement cycle from business analysis with a client, <br> To
+                developing the entire stack of an app
+                all the way to ensuring it is properly hosted and supported in it's life.
             </p>
-        </div> -->
-        <footer>
-            <img src="../../../assets/logos/angular.png" alt="Angular Logo">
-            <img src="../../../assets/logos/react.png" alt="React Logo">
-            <img src="../../../assets/logos/node.png" alt="Node Logo">
-            <img src="../../../assets/logos/loopback.png" alt="Loopback Logo">
-            <img src="../../../assets/logos/sql.png" alt="SQL Logo">
-        </footer>
-    </div>
+            <nav class="links">
+                <a class="downloadCV" href="/about/cv" title="View My CV" target="_self">View CV<i
+                        class="far fa-file"></i></a>
+                <a class="downloadCV" href="https://www.github.com/brooklynP" target="_blank"
+                    title="Go To My Github">See My
+                    Code<i class="fab fa-github"></i></a>
+                <a class="downloadCV" href="https://www.linkedin.com/in/brooklynpedley/" target="_blank"
+                    title="See My Linkedin"><i class="fab fa-linkedin small"></i></a>
+            </nav>
+        </div>
+        <figure class="right">
+            <img src="../../../assets/portrait.jpg" alt="Profile Picture">
+        </figure>
+    </section>
+    <div class="hr"></div>
+    <section class="techStack" id="tech-stack">
+        <h3>&lt; My Tech Stack &gt;</h3>
+        <div class="techStackBody">
+            <div class="card">
+                <h4>The Frontend</h4>
+                <p>I love to use React or Angular for my frontends and understand the need for UI that is performant and
+                    mobile first. <br>
+                    And I also produce server rendered front ends using VB.NET for all in one solutions.</p>
+                <a href="/projects/1">Example of an Angular App</a><br>
+                <a href="/projects/13">Example of a React App</a><br>
+                <a href="/projects/TODO">Example of a VB.NET App</a>
+                <p>I have built frontends on multiple platforms such as mobile with Ionic alongside Angular, as well as
+                    React based PWAs.
+                    <br>I have also built desktop native solutions using tools such as Electron and WPF.
+                </p>
+                <a href="/projects/6">Example of an Electron app</a><br>
+                <a href="/projects/4">Example of a WPF app</a>
+                <p>I have integrated with many enterprise level third party APIs such as Microsoft Graph,
+                    Xero/Quickbooks, MalwareBytes and Plaid. <br>
+                    And I fully understand the latest API standards such as Oauth</p>
+                <a href="/projects/12">Example of a third party API in use</a>
+            </div>
+            <div class="card">
+                <h4>The Backend</h4>
+                <p>I know how to build out large databases on Microsoft SQL Server, using T-SQL to create complex
+                    procedures and views.</p>
+                <a href="/projects/13">Example of an app that uses a T-SQL DB</a>
+                <p>When it comes to hosting I have a mix of experience between AWS and IIS and have touched upon
+                    Azure.<br>
+                    For AWS I am capable of using S3 and CloudFront to build scalable websites as well as API Gateway
+                    and Lambda to setup APIs.<br>
+                    When it comes to IIS I know how to set up and manage privately hosted sites on VPS's as well as
+                    ensure they are secure by producing SSL certificates through CertifyTheWeb
+                </p>
+                <a href="/projects/1">Example of a project hosted on AWS s3</a>
+                <p>To link it all together, I have developed REST APIs both directly in Express.JS and using Loopback 3
+                    and 4 to quickly scaffold APIs. <br>
+                    I also know how to script in PowerShell to produce useful server scripts such as regular data feeds
+                    from one database to another.</p>
+                <a href="/projects/12">Example of developing an API</a><br>
+                <a href="/projects/15">Example of developing an script in PowerShell</a>
+            </div>
+        </div>
+        <h3>&lt;/ My Tech Stack &gt;</h3>
+    </section>
+    <div class="hr"></div>
+    <section id="work-experience">
+        <h3>&lt; Work Experience &gt;</h3>
+        <app-work-tile setID="workTileRight1" title="Full Stack Javascript Specialist" company="AlphaFirst"
+            [startDate]="createDate('June 29, 2021')" [newPosition]="true"
+            logoPath="../../../assets/logos/alphafirst.png"></app-work-tile>
 
-    <h3>&lt;/ My Tech Stack &gt;</h3>
-</section>
-<div class="hr"></div>
-<section id="work-experience">
-    <h3>&lt; Work Experience &gt;</h3>
-    <app-work-tile setID="workTileRight1" title="Full Stack Javascript Specialist" company="AlphaFirst"
-                 [startDate]="createDate('June 29, 2021')" [newPosition]="true"
-                   logoPath="../../../assets/logos/alphafirst.png"></app-work-tile>
-
-    <app-work-tile setID="workTileRight2" title="Junior Developer" company="AlphaFirst"
-        [startDate]="createDate('September 1, 2020')" [endDate]="createDate('June 29, 2021')" [duties]="[
+        <app-work-tile setID="workTileRight2" title="Junior Developer" company="AlphaFirst"
+            [startDate]="createDate('September 1, 2020')" [endDate]="createDate('June 29, 2021')" [duties]="[
         'Producing bespoke software solutions',
         'Creating backend APIS and databases',
         'Designing and creating responsive frontends',
@@ -94,8 +99,8 @@
         Database: 'MSSQL'
       }"></app-work-tile>
 
-    <app-work-tile setID="workTileRight3" title="Trainee Developer" company="Attend2IT"
-        [startDate]="createDate('May 1, 2019')" [endDate]="createDate('September 1, 2020')" [duties]="[
+        <app-work-tile setID="workTileRight3" title="Trainee Developer" company="Attend2IT"
+            [startDate]="createDate('May 1, 2019')" [endDate]="createDate('September 1, 2020')" [duties]="[
         'Producing bespoke apps and websites for the events industry',
     'Designing and creating responsive frontends',
     'Creating Wordpress websites with custom functionality',
@@ -106,18 +111,18 @@
         Backend: 'Node.JS',
         Hosting: 'AWS',
         Database: 'Couchbase'
-      }"  logoPath="../../../assets/logos/attend2it.png"></app-work-tile>
-    <h3>&lt;/ Work Experience &gt;</h3>
-</section>
-<div class="hr"></div>
-<section id="other-experience">
-    <h3>&lt; Other Experience &gt;</h3>
-    <app-other-experience-tile setID="expTile1" [date]="createDate('February 1, 2020')"
-        experienceTitle="CertificationInUIUX" [text]="['I have attained a BSC accredited certification in foundation ' +
+      }" logoPath="../../../assets/logos/attend2it.png"></app-work-tile>
+        <h3>&lt;/ Work Experience &gt;</h3>
+    </section>
+    <div class="hr"></div>
+    <section id="other-experience">
+        <h3>&lt; Other Experience &gt;</h3>
+        <app-other-experience-tile setID="expTile1" [date]="createDate('February 1, 2020')"
+            experienceTitle="CertificationInUIUX" [text]="['I have attained a BSC accredited certification in foundation ' +
          'user experience following a training course on the subject']"></app-other-experience-tile>
 
-    <app-other-experience-tile setID="expTile2" [date]="createDate('November 1, 2016')"
-        experienceTitle="GoldMedalAtWorldSkillsShow" [text]="['Paired with an engineer I went to the world skills show' +
+        <app-other-experience-tile setID="expTile2" [date]="createDate('November 1, 2016')"
+            experienceTitle="GoldMedalAtWorldSkillsShow" [text]="['Paired with an engineer I went to the world skills show' +
          'at the NEC, to represent my school in undertaking a 48hr competition with teams from other schools and ' +
           'universities.',
         'We had to create an autonomous robot capable of detecting RFID coloured tags on objects scattered around an ' +
@@ -125,91 +130,92 @@
         'I had to quickly learn how to use C while my engineer developed the robot. ' +
          'Then within the 2 days I developed an AI that could patrol the arena and scan objects it came across.',
         'I take great pride in the fact I was able to win the gold medal in this competition!']">
-    </app-other-experience-tile>
+        </app-other-experience-tile>
 
-    <app-other-experience-tile setID="expTile3" [date]="createDate('May 1, 2015')"
-        experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work ' +
+        <app-other-experience-tile setID="expTile3" [date]="createDate('May 1, 2015')"
+            experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work ' +
          'experience at the Hertfordshire Police HQ. Here I shadowed their IT team as well as the in house developers.'+
         'I learnt a lot about repairing IT equipment as well as seeing hands on how software developers' +
         'worked in the industry.']"></app-other-experience-tile>
-    <h3>&lt;/ Other Experience &gt;</h3>
+        <h3>&lt;/ Other Experience &gt;</h3>
 
-</section>
-<div class="hr"></div>
-<section id="education">
-    <h3>&lt; Education &gt;</h3>
-    <div class="educationTile card">
-        <h4>Games Programming at the university of Gloucestershire > 2017-2019</h4>
-        <div class="university">
-            <div>
-                <h5>Details</h5>
-                <p>I undertook 2 years of a BSc. course in producing video games using game engines such as unity.
-                    I produced many 2D and 3D games such as working with a team of designers in order to create a 3D
-                    racing
-                    game. I also created desktop apps such as a sprite editing app. I was unfortunately unable to
-                    complete
-                    the course.
-                </p>
-            </div>
-            <div>
-                <div class="listContainer">
-                    <h5>Skills</h5>
-                    <ul class="cmdStyleList">
-                        <li>- C# and C++</li>
-                        <li>- Unity</li>
-                        <li>- WPF .NET Apps</li>
-                    </ul>
+    </section>
+    <div class="hr"></div>
+    <section id="education">
+        <h3>&lt; Education &gt;</h3>
+        <div class="educationTile card">
+            <h4>Games Programming at the university of Gloucestershire > 2017-2019</h4>
+            <div class="university">
+                <div>
+                    <h5>Details</h5>
+                    <p>I undertook 2 years of a BSc. course in producing video games using game engines such as unity.
+                        I produced many 2D and 3D games such as working with a team of designers in order to create a 3D
+                        racing
+                        game. I also created desktop apps such as a sprite editing app. I was unfortunately unable to
+                        complete
+                        the course.
+                    </p>
+                </div>
+                <div>
+                    <div class="listContainer">
+                        <h5>Skills</h5>
+                        <ul class="cmdStyleList">
+                            <li>- C# and C++</li>
+                            <li>- Unity</li>
+                            <li>- WPF .NET Apps</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="educationTile card">
-        <h4>The John Warner School > 2010 to 2017</h4>
-        <div class="gradeLists">
-            <div>
-                <h5>
-                    GCSEs
-                </h5>
-                <ul class="cmdStyleList">
-                    <li>
-                        - 12 A*-C including...
-                    </li>
-                    <li>
-                        - A* maths
-                    </li>
-                    <li>
-                        - A Computing
-                    </li>
-                    <li>
-                        - B English
-                    </li>
-                </ul>
+        <div class="educationTile card">
+            <h4>The John Warner School > 2010 to 2017</h4>
+            <div class="gradeLists">
+                <div>
+                    <h5>
+                        GCSEs
+                    </h5>
+                    <ul class="cmdStyleList">
+                        <li>
+                            - 12 A*-C including...
+                        </li>
+                        <li>
+                            - A* maths
+                        </li>
+                        <li>
+                            - A Computing
+                        </li>
+                        <li>
+                            - B English
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>A levels</h5>
+                    <ul class="cmdStyleList">
+                        <li>
+                            - C Maths
+                        </li>
+                        <li>
+                            - C Computing
+                        </li>
+                        <li>
+                            - C Financial Studies
+                        </li>
+                        <li>
+                            - E Physics
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    UKMT Math's Challenge: Bronze
+                </p>
             </div>
-            <div>
-                <h5>A levels</h5>
-                <ul class="cmdStyleList">
-                    <li>
-                        - C Maths
-                    </li>
-                    <li>
-                        - C Computing
-                    </li>
-                    <li>
-                        - C Financial Studies
-                    </li>
-                    <li>
-                        - E Physics
-                    </li>
-                </ul>
-            </div>
-            <p>
-                UKMT Math's Challenge: Bronze
-            </p>
         </div>
-    </div>
-    <h3>&lt;/ Education &gt;</h3>
-</section>
-<div class="hr"></div>
-<footer>
-    <a href="/about#">Back To Top <i class="fas fa-arrow-up"></i></a>
-</footer>
+        <h3>&lt;/ Education &gt;</h3>
+    </section>
+    <div class="hr"></div>
+    <footer>
+        <a href="/about#">Back To Top <i class="fas fa-arrow-up"></i></a>
+    </footer>
+</div>

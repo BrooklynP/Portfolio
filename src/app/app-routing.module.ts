@@ -16,7 +16,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'projects/:uid',
+    path: 'project/:uid',
     component: SingleProjectPageComponent
   },
   {
@@ -25,6 +25,10 @@ const routes: Routes = [
   },
   {
     path: 'projects',
+    component: ProjectsPageComponent
+  },
+  {
+    path: 'projects/:uid',
     component: ProjectsPageComponent
   },
   {

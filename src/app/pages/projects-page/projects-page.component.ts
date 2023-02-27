@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsDataService } from 'src/app/portfolioData/projects-data.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SkillsDataService } from 'src/app/skillsData/skills-data.service';
 
 @Component({
@@ -29,12 +29,18 @@ export class ProjectsPageComponent implements OnInit {
   };
   public currentScreenshot = 0
 
-  constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
+  constructor(public projectsService: ProjectsDataService, private route: ActivatedRoute, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
     this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
   }
 
   ngOnInit() {
+    this.route.params.forEach((param) => {
+      const ProjectID = parseInt(param.uid, 10)
+      if (ProjectID <= this.projects.length - 1 && ProjectID > 0) {
+        this.selectProject(ProjectID, ProjectID);
+      }
+    });
   }
 
 
@@ -64,7 +70,7 @@ export class ProjectsPageComponent implements OnInit {
 
   selectProject(index: number, trueIndex: number) {
     if(screen.availWidth <= 800){
-      this.router.navigate(['/projects', trueIndex]);
+      this.router.navigate(['/project', trueIndex]);
       return
     }
 
@@ -72,6 +78,7 @@ export class ProjectsPageComponent implements OnInit {
     this.currentScreenshot = 0;
     this.showRightPanel =  true
     this.selectedProject = this.projects[index];
+    console.log(this.selectedProject);
     scrollTo({top: 0, behavior: 'smooth'})
   }
 

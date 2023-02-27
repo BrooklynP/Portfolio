@@ -4,6 +4,15 @@ figure{
 	margin:0;
 }
 
+hr{
+	width: 100%;
+}
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .downloadCV{
 	border: solid 2px $accent;
   	color: $textPrimary;
@@ -29,8 +38,6 @@ figure{
 }
 
 .row{
-	max-width: 800px;
-	margin: 0 auto;
 	display: flex;
 	padding: 10px;
 	.left{
@@ -40,18 +47,26 @@ figure{
 		}
 	}
 }
-
-.fullWidth{
+.techStackBody{
+	display: flex;
+	flex-flow: wrap;
+	padding: 10px;
+	justify-content: space-between;
+}
+.techStackBody div{
 	width: 46%;
 	padding: 16px 8px 8px;
+	margin-bottom: 32px;
 }
 .techStack .row{
 	justify-content: space-between;
 }
 
+
 img{
 	margin-left: 8px;
 	height: 200px;
+	min-width: 200px;
 	width: auto;
 	border: solid 2px $accent;
 	border-radius: 3px;
@@ -143,12 +158,8 @@ h5{
 	margin: 0;
 }
 
-section{
-	max-width: 800px;
-	margin: 0 auto;
-	p{
-		text-align: left;
-	}
+section p{
+	text-align: left;
 }
 
 nav.pageNav{
@@ -175,10 +186,6 @@ footer{
 	display: flex;
 	justify-content: center;
 	margin: 16px;
-}
-
-.hr{
-	width: 800px;
 }
 
 @media screen and (max-width: 1140px) {
