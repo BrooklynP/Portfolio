@@ -14,11 +14,21 @@
     transition: width 1s;
 }
 
+figure img{
+    width: auto;
+    max-height: 365px;
+    max-width: 800px;
+    border: solid 1px #4AF626;
+}
+
 figure{
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
+
 
 ul{
     list-style: none;
