@@ -210,10 +210,22 @@ export class ProjectsDataService {
       desc: `This is an API endpoint that takes data from a local SQL database and creates an iCal file. 
       It can then be downloaded by visiting the endpoint in browser. 
       Or it can be subscribed to over the web as an iCal feed. 
-      It conforms to Micrsooft spec for iCal`,
+      It conforms to Micrsooft spec for iCal.`,
       skills: ["ASP.VB", "iCal Format", "SQL"],
       screenshots: ["/assets/project-screenshots/ical1.png"],
       skillToFilterBy: "Backend"
+    },
+    {
+      index: 18,
+      name: "Discord Bot",
+      summary: "A discord chat bot capable of multiple functions",
+      desc: `This is a Discord bot that is able to reply messages to users when given fixed commands,  write formatted messages in informational channels and display the floor price of NFTs. 
+      It sees use in a server with over 15000 users`,
+      skills: ["Node.JS", "Discord.JS", "HyperSpace API"],
+      screenshots: ["/assets/project-screenshots/discord3.png","/assets/project-screenshots/discord2.png",
+      "/assets/project-screenshots/discord1.png","/assets/project-screenshots/discord4.png"],
+      link: "https://discord.gg/batbrigade",
+      skillToFilterBy: "Third Party APIs"
     }
   ];
 
