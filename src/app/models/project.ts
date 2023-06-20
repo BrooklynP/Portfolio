@@ -7,5 +7,5 @@ export interface Project {
   skills: Array<string>;
   screenshots: Array<string>;
   githubLink?: string;
-  skillToFilterBy: string;
+  skillsToFilterBy: Array<string>;
 }

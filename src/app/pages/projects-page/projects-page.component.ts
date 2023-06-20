@@ -90,7 +90,7 @@ export class ProjectsPageComponent implements OnInit {
     }
 
     this.projects = this.projectsService.getProjects().filter(project => {
-      return project.skillToFilterBy === this.currentFilter;
+      return project.skillsToFilterBy.includes(this.currentFilter);
     });
   }
 

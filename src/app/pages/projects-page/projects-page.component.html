@@ -12,7 +12,8 @@
 
         <div class="project-cards-container">
             <div class="project-card selected" *ngIf="showRightPanel"
-                [style.backgroundImage]="'url('+selectedProject.screenshots[0]+')'" [style.width]="'600px'" [style.height]="'300px'">
+                [style.backgroundImage]="'url('+selectedProject.screenshots[0]+')'" [style.width]="'600px'"
+                [style.height]="'300px'">
                 <div (click)="deselectProject()" class="project-card-title-container">
                     <h1 class="project-card-title">
                         {{selectedProject.name}}
@@ -21,7 +22,9 @@
             </div>
             <div class="project-card" *ngFor="let project of projects; let i = index"
                 [style.display]="showRightPanel && project.name === selectedProject.name ? 'none' : 'block'"
-                [style.backgroundImage]="'url('+project.screenshots[0]+')'" [style.width]="showRightPanel === false ? '300px' : '600px'" [style.height]="showRightPanel === false ? '150px' : '300px'">
+                [style.backgroundImage]="'url('+project.screenshots[0]+')'"
+                [style.width]="showRightPanel === false ? '300px' : '600px'"
+                [style.height]="showRightPanel === false ? '150px' : '300px'">
                 <div (click)="selectProject(i, project.index)" class="project-card-title-container">
                     <h1 class="project-card-title">
                         {{project.name}}
@@ -37,36 +40,42 @@
                 <p class="center">{{selectedProject.summary}}</p>
                 <button (click)="deselectProject()" class="deselectButton"> x </button>
             </header>
-        
+
             <figure>
-                <img src="{{selectedProject.screenshots[currentScreenshot]}}" alt="Screenshot of project" class="selectedProjectImage">
+                <img src="{{selectedProject.screenshots[currentScreenshot]}}" alt="Screenshot of project"
+                    class="selectedProjectImage">
                 <div class="imgControls" *ngIf="selectedProject.screenshots.length > 1">
-                    <button (click)="previousScreenshot()"> < </button>
-                    <div (click) ="selectScreenshot(i)" class="selector" *ngFor="let image of selectedProject.screenshots; let i = index" [style.backgroundColor]="i === currentScreenshot ? '#4AF626' : 'black'"></div>
-                    <button (click)="nextScreenshot()"> > </button>
+                    <button (click)="previousScreenshot()">
+                        < </button>
+                            <div (click)="selectScreenshot(i)" class="selector"
+                                *ngFor="let image of selectedProject.screenshots; let i = index"
+                                [style.backgroundColor]="i === currentScreenshot ? '#4AF626' : 'black'"></div>
+                            <button (click)="nextScreenshot()"> > </button>
                 </div>
             </figure>
-        
+
             <section>
                 <h2>About This Project</h2>
                 <p [innerText]="selectedProject.desc"></p>
             </section>
-        
+
             <section>
                 <h2>Tech And Skills</h2>
                 <ul class="includeBullets">
                     <li *ngFor="let skill of selectedProject.skills">{{skill}}</li>
                 </ul>
             </section>
-        
+
             <section>
                 <h2 *ngIf="selectedProject.link || selectedProject.githubLink">Resources</h2>
                 <ul>
                     <li>
-                        <a *ngIf="selectedProject.link" href="{{selectedProject.link}}" title="This Project's Website">View Project Live <i class="fas fa-link"></i></a>
+                        <a *ngIf="selectedProject.link" href="{{selectedProject.link}}"
+                            title="This Project's Website">View Project Live <i class="fas fa-link"></i></a>
                     </li>
                     <li>
-                        <a *ngIf="selectedProject.githubLink" href="{{selectedProject.githubLink}}" title="This Project's GitHub">View Project Code<i class="fab fa-github"></i></a>
+                        <a *ngIf="selectedProject.githubLink" href="{{selectedProject.githubLink}}"
+                            title="This Project's GitHub">View Project Code<i class="fab fa-github"></i></a>
                     </li>
                 </ul>
             </section>

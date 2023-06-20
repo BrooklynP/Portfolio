@@ -6,6 +6,7 @@
 
 .right{
     position:fixed;
+    height: calc(100vh - 108px);
     width: 50%;
     transition: left 1s;
 }
@@ -29,7 +30,17 @@ figure{
     justify-content: space-between;
 }
 
-
+.right article {
+    height:100%;
+    overflow-y: scroll;
+}
+.right article::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+.right article::-webkit-scrollbar-thumb {
+  background-color: $textPrimary;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -191,6 +202,10 @@ ul.includeBullets li:before{
 
 h1, .center{
     text-align: center;
+}
+
+label{
+    color: #addb67;
 }
 
 @media only screen and (max-width: 800px) {
