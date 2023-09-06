@@ -16,9 +16,10 @@
                 years of industry experience producing software across a broad range of requirements, with a focus on
                 JavaScript web applications.</p>
             <p>
-                My skills take me across the whole developement cycle from business analysis with a client, <br> To
+                My skills take me across the whole development lifecycle all the way from business analysis with a
+                client, <br> to
                 developing the entire stack of an app
-                all the way to ensuring it is properly hosted and supported in it's life.
+                and then ensuring it is properly hosted and supported throughout its life.
             </p>
             <nav class="links">
                 <a class="downloadCV" href="/about/cv" title="View My CV" target="_self">View CV<i
@@ -40,42 +41,55 @@
         <div class="techStackBody">
             <div class="card">
                 <h4>The Frontend</h4>
-                <p>I love to use React or Angular for my frontends and understand the need for UI that is performant and
-                    mobile first. <br>
-                    And I also produce server rendered front ends using VB.NET for all in one solutions.</p>
-                <a href="/projects/1">Example of an Angular App</a><br>
-                <a href="/projects/13">Example of a React App</a><br>
-                <a href="/projects/TODO">Example of a VB.NET App</a>
-                <p>I have built frontends on multiple platforms such as mobile with Ionic alongside Angular, as well as
-                    React based PWAs.
-                    <br>I have also built desktop native solutions using tools such as Electron and WPF.
+                <p>
+                    I am currently enjoying using React for my frontend as well as some past experience with Angular.
+                    <br>
+                    Over time I have come to understand the need for responsive UI, as more people use devices of
+                    varying sizes, including mobile. <br>
+                    So I leverage modern techniques such as the Bootstrap CSS toolkit and create websites that function
+                    as PWAs.
                 </p>
-                <a href="/projects/6">Example of an Electron app</a><br>
-                <a href="/projects/4">Example of a WPF app</a>
-                <p>I have integrated with many enterprise level third party APIs such as Microsoft Graph,
-                    Xero/Quickbooks, MalwareBytes and Plaid. <br>
-                    And I fully understand the latest API standards such as Oauth</p>
-                <a href="/projects/12">Example of a third party API in use</a>
+                <p>
+                    Additionally, I have experience developing VB.NET apps for server side rendering,
+                    as I've found the Infragistics UI tables to be highly efficient for displaying large amounts of SQL
+                    data.
+                </p>
+                <p>
+                    And for the desktop I have created both WPF and Electron apps.
+                </p>
+                <p class="examples">
+                    <a href="/projects/5">Angular Example</a> -
+                    <a href="/projects/0">React PWA Example</a> -
+                    <a href="/projects/2">VB.NET Example</a> -
+                    <a href="/projects/9">Electron Example </a> -
+                    <a href="/projects/13">WPF Example</a>
+                </p>
+                <p>I have integrated with many enterprise-level third-party APIs such as Microsoft Graph,
+                    Xero/Quickbooks, MalwareBytes and Plaid.</p>
+                <a href="/projects/6">Example of a third party API in use</a>
             </div>
             <div class="card">
                 <h4>The Backend</h4>
-                <p>I know how to build out large databases on Microsoft SQL Server, using T-SQL to create complex
-                    procedures and views.</p>
-                <a href="/projects/13">Example of an app that uses a T-SQL DB</a>
-                <p>When it comes to hosting I have a mix of experience between AWS and IIS and have touched upon
-                    Azure.<br>
-                    For AWS I am capable of using S3 and CloudFront to build scalable websites as well as API Gateway
-                    and Lambda to setup APIs.<br>
-                    When it comes to IIS I know how to set up and manage privately hosted sites on VPS's as well as
-                    ensure they are secure by producing SSL certificates through CertifyTheWeb
+                <p>
+                    I have a deep knowledge of SQL, mainly focusing on Microsoft SQL Server.
+                    I am experienced in writing out complex procedures and views and using SQL Server tools to 
+                    create indexes etc. to ensure they are being run efficiently.
                 </p>
-                <a href="/projects/1">Example of a project hosted on AWS s3</a>
-                <p>To link it all together, I have developed REST APIs both directly in Express.JS and using Loopback 3
-                    and 4 to quickly scaffold APIs. <br>
+                <a href="/projects/2">Example of an app that uses an SQL DB</a>
+                <p>
+                    When it comes to hosting I have a mix of experience between AWS and IIS. And have touched upon
+                    Azure.<br>
+                    For AWS  I have used S3 and CloudFront to host scalable websites as well as API Gateway
+                    and Lambda to setup APIs.<br>
+                    When it comes to IIS, I know how to set up and manage sites on local servers as well as
+                    ensure they are secure by producing SSL certificates through CertifyTheWeb.
+                </p>
+                <p>
+                    To link it all together, I have developed APIs with Express and Node.JS, as well as using Loopback 3/4 to quickly scaffold APIs. <br>
                     I also know how to script in PowerShell to produce useful server scripts such as regular data feeds
-                    from one database to another.</p>
-                <a href="/projects/12">Example of developing an API</a><br>
-                <a href="/projects/15">Example of developing an script in PowerShell</a>
+                    from one database to another.
+                </p>
+                <a href="/projects/1">Example of an app using an API</a>
             </div>
         </div>
         <h3>&lt;/ My Tech Stack &gt;</h3>
@@ -120,7 +134,8 @@
     <section id="other-experience">
         <h3>&lt; Other Experience &gt;</h3>
         <app-other-experience-tile setID="expTile1" [date]="createDate('January 3, 2022')"
-            experienceTitle="CertificateInBusinessAnalysisFundamentals" [text]="['I have completed a training course in ' +
+            experienceTitle="CertificateInBusinessAnalysisFundamentals"
+            [text]="['I have completed a training course in ' +
          'business analysis to make sure the software I develop is fit for the requirements of the client']"></app-other-experience-tile>
         <app-other-experience-tile setID="expTile2" [date]="createDate('February 1, 2020')"
             experienceTitle="CertificationInUIUX" [text]="['I have attained a BSC accredited certification in foundation ' +

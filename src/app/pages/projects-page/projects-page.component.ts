@@ -37,7 +37,7 @@ export class ProjectsPageComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((param) => {
       const ProjectID = parseInt(param.uid, 10)
-      if (ProjectID <= this.projects.length - 1 && ProjectID > 0) {
+      if (ProjectID <= this.projects.length - 1 && ProjectID > -1) {
         this.selectProject(ProjectID, ProjectID);
       }
     });

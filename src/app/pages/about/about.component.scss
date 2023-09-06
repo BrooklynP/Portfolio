@@ -54,14 +54,19 @@ hr{
 	justify-content: space-between;
 }
 .techStackBody div{
-	max-width: 414px;
-	padding: 16px 8px 8px;
+	max-width: 400px;
+	padding: 16px;
 	margin-bottom: 32px;
+}
+.techStackBody h4{
+	margin-top: 0;
 }
 .techStack .row{
 	justify-content: space-between;
 }
-
+.examples a{
+	display: inline-block;
+}
 
 img{
 	margin-left: 8px;
@@ -70,33 +75,6 @@ img{
 	width: auto;
 	border: solid 2px $accent;
 	border-radius: 3px;
-}
-
-.techStack{
-	.body{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: space-evenly;
-    	padding: 16px 8px 8px;
-    	margin: 16px 10px;
-
-		div{
-			width: 100%;
-			h4, p{
-				text-align: left;
-			}
-		}
-	}
-	footer{
-		display: flex;
-		justify-content: center;
-	}
-	img{
-		max-height: 32px;
-		border: none;
-	}
-
 }
 
 .educationTile{
